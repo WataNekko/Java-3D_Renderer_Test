@@ -24,3 +24,6 @@ hs_err_pid*
 
 # bin folder
 /3D Renderer/bin/
+
+# Except runnable jar
+!3D_Renderer.jar
