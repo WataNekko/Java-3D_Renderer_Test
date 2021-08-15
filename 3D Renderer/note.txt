@@ -1,0 +1,1 @@
+Important: 3D_Renderer.jar must be run in the "3D Renderer" folder because GUI images and audio are not embedded and are read locally (in src/resources).
