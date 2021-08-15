@@ -147,7 +147,7 @@ public class ModelManager extends JDialog {
 
 		// Scale
 		spScale = new JSpinner();
-		spScale.setModel(new SpinnerNumberModel(new Float(1), new Float(0), null, new Float(0.25f)));
+		spScale.setModel(new SpinnerNumberModel(Float.valueOf(1), Float.valueOf(0), null, Float.valueOf(0.25f)));
 		spScale.setBounds(60, 5, 50, 20);
 		spScale.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
@@ -173,7 +173,7 @@ public class ModelManager extends JDialog {
 		modelPane.add(lblPosVal);
 
 		spPosX = new JSpinner();
-		spPosX.setModel(new SpinnerNumberModel(new Float(0), null, null, new Float(0.25f)));
+		spPosX.setModel(new SpinnerNumberModel(Float.valueOf(0), null, null, Float.valueOf(0.25f)));
 		spPosX.setBounds(60, 30, 50, 20);
 		spPosX.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
@@ -186,7 +186,7 @@ public class ModelManager extends JDialog {
 		modelPane.add(spPosX);
 
 		spPosY = new JSpinner();
-		spPosY.setModel(new SpinnerNumberModel(new Float(0), null, null, new Float(0.25f)));
+		spPosY.setModel(new SpinnerNumberModel(Float.valueOf(0), null, null, Float.valueOf(0.25f)));
 		spPosY.setBounds(120, 30, 50, 20);
 		spPosY.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
@@ -199,7 +199,7 @@ public class ModelManager extends JDialog {
 		modelPane.add(spPosY);
 
 		spPosZ = new JSpinner();
-		spPosZ.setModel(new SpinnerNumberModel(new Float(0), null, null, new Float(0.25f)));
+		spPosZ.setModel(new SpinnerNumberModel(Float.valueOf(0), null, null, Float.valueOf(0.25f)));
 		spPosZ.setBounds(180, 30, 50, 20);
 		spPosZ.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
@@ -226,7 +226,7 @@ public class ModelManager extends JDialog {
 		modelPane.add(lblRotVal);
 
 		spRotX = new JSpinner();
-		spRotX.setModel(new SpinnerNumberModel(new Float(0), new Float(-180), new Float(180), new Float(1)));
+		spRotX.setModel(new SpinnerNumberModel(Float.valueOf(0), Float.valueOf(-180), Float.valueOf(180), Float.valueOf(1)));
 		spRotX.setBounds(60, 55, 50, 20);
 		spRotX.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
@@ -239,7 +239,7 @@ public class ModelManager extends JDialog {
 		modelPane.add(spRotX);
 
 		spRotY = new JSpinner();
-		spRotY.setModel(new SpinnerNumberModel(new Float(0), new Float(0), new Float(360), new Float(1)));
+		spRotY.setModel(new SpinnerNumberModel(Float.valueOf(0), Float.valueOf(0), Float.valueOf(360), Float.valueOf(1)));
 		spRotY.setBounds(120, 55, 50, 20);
 		spRotY.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
@@ -252,7 +252,7 @@ public class ModelManager extends JDialog {
 		modelPane.add(spRotY);
 
 		spRotZ = new JSpinner();
-		spRotZ.setModel(new SpinnerNumberModel(new Float(0), new Float(-180), new Float(180), new Float(1)));
+		spRotZ.setModel(new SpinnerNumberModel(Float.valueOf(0), Float.valueOf(-180), Float.valueOf(180), Float.valueOf(1)));
 		spRotZ.setBounds(180, 55, 50, 20);
 		spRotZ.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {

@@ -206,7 +206,7 @@ public class ModelAdder extends JDialog {
 
 		// Scale
 		spScale = new JSpinner();
-		spScale.setModel(new SpinnerNumberModel(new Float(1), new Float(0), null, new Float(0.25f)));
+		spScale.setModel(new SpinnerNumberModel(Float.valueOf(1), Float.valueOf(0), null, Float.valueOf(0.25f)));
 		spScale.setBounds(106, 5, 75, 20);
 		paneAttribute.add(spScale);
 
@@ -223,19 +223,19 @@ public class ModelAdder extends JDialog {
 		};
 
 		spPosX = new JSpinner();
-		spPosX.setModel(new SpinnerNumberModel(new Float(0), null, null, new Float(0.25f)));
+		spPosX.setModel(new SpinnerNumberModel(Float.valueOf(0), null, null, Float.valueOf(0.25f)));
 		spPosX.setBounds(156, 36, 75, 20);
 		spPosX.addChangeListener(updatePosVal);
 		paneAttribute.add(spPosX);
 
 		spPosY = new JSpinner();
-		spPosY.setModel(new SpinnerNumberModel(new Float(0), null, null, new Float(0.25f)));
+		spPosY.setModel(new SpinnerNumberModel(Float.valueOf(0), null, null, Float.valueOf(0.25f)));
 		spPosY.setBounds(241, 36, 75, 20);
 		spPosY.addChangeListener(updatePosVal);
 		paneAttribute.add(spPosY);
 
 		spPosZ = new JSpinner();
-		spPosZ.setModel(new SpinnerNumberModel(new Float(0), null, null, new Float(0.25f)));
+		spPosZ.setModel(new SpinnerNumberModel(Float.valueOf(0), null, null, Float.valueOf(0.25f)));
 		spPosZ.setBounds(326, 36, 75, 20);
 		spPosZ.addChangeListener(updatePosVal);
 		paneAttribute.add(spPosZ);
@@ -253,19 +253,19 @@ public class ModelAdder extends JDialog {
 		};
 
 		spRotX = new JSpinner();
-		spRotX.setModel(new SpinnerNumberModel(new Float(0), new Float(-180), new Float(180), new Float(1)));
+		spRotX.setModel(new SpinnerNumberModel(Float.valueOf(0), Float.valueOf(-180), Float.valueOf(180), Float.valueOf(1)));
 		spRotX.setBounds(156, 67, 75, 20);
 		spRotX.addChangeListener(updateRotVal);
 		paneAttribute.add(spRotX);
 
 		spRotY = new JSpinner();
-		spRotY.setModel(new SpinnerNumberModel(new Float(0), new Float(0), new Float(360), new Float(1)));
+		spRotY.setModel(new SpinnerNumberModel(Float.valueOf(0), Float.valueOf(0), Float.valueOf(360), Float.valueOf(1)));
 		spRotY.setBounds(241, 67, 75, 20);
 		spRotY.addChangeListener(updateRotVal);
 		paneAttribute.add(spRotY);
 
 		spRotZ = new JSpinner();
-		spRotZ.setModel(new SpinnerNumberModel(new Float(0), new Float(-180), new Float(180), new Float(1)));
+		spRotZ.setModel(new SpinnerNumberModel(Float.valueOf(0), Float.valueOf(-180), Float.valueOf(180), Float.valueOf(1)));
 		spRotZ.setBounds(326, 67, 75, 20);
 		spRotZ.addChangeListener(updateRotVal);
 		paneAttribute.add(spRotZ);
@@ -314,7 +314,7 @@ public class ModelAdder extends JDialog {
 		randomPane.add(lblNewLabel);
 
 		spAmount = new JSpinner();
-		spAmount.setModel(new SpinnerNumberModel(new Integer(1), new Integer(1), null, new Integer(1)));
+		spAmount.setModel(new SpinnerNumberModel(Integer.valueOf(1), Integer.valueOf(1), null, Integer.valueOf(1)));
 		spAmount.setBounds(71, 8, 80, 20);
 		randomPane.add(spAmount);
 
@@ -324,7 +324,7 @@ public class ModelAdder extends JDialog {
 		randomPane.add(lblNewLabel_1);
 
 		spRange = new JSpinner();
-		spRange.setModel(new SpinnerNumberModel(new Float(50), new Float(0), null, new Float(1)));
+		spRange.setModel(new SpinnerNumberModel(Float.valueOf(50), Float.valueOf(0), null, Float.valueOf(1)));
 		spRange.setBounds(265, 8, 80, 20);
 		randomPane.add(spRange);
 
