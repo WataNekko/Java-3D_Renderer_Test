@@ -3,7 +3,6 @@ This is my attempt to create a 3D renderer in pure Java using JFrame.
 
 # About
 The purpose of this project is for me to get used to coding a Java project and learn about 3D graphics at the same time.
-I made and considered this project finished in August 2020.
 
 Its only feature is rendering the predefined cube model and .obj models on a JFrame by drawing lines between vertices.
 No texture mapping, camera culling or z-buffering support.
